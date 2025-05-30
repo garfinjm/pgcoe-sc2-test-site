@@ -37,7 +37,7 @@ In some cases, limited metadata about the biological sample that was used to gen
 
 The figure below from Timme et al. (2023) shows the relationship between these resources graphically (excluding umbrella BioProjects):
 
-> ![Fig. 2.](../media/Pathogen_DOM.png)
+> ![Fig. 2.](../../media/Pathogen_DOM.png)
 > Timme RE, Karsch-Mizrachi I, Waheed Z, et al. Putting everything in its place: using the INSDC compliant Pathogen Data Object Model to better structure genomic data submitted for public health applications. Microb Genom. 2023;9(12):001145. doi:[10.1099/mgen.0.001145](https://doi.org/10.1099/mgen.0.001145)
 
 > **🔗Links**

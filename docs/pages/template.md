@@ -50,7 +50,7 @@ Callouts can make short important details stand out.
 <!--
 For figures that need to be cited, use greater than to enclose both the figure and the citation in a quote block.
 -->
-> ![Fig. 2.](../../media/Pathogen_DOM.png)
+> ![Fig. 2.](../media/Pathogen_DOM.png)
 > Timme RE, Karsch-Mizrachi I, Waheed Z, et al. Putting everything in its place: using the INSDC compliant Pathogen Data Object Model to better structure genomic data submitted for public health applications. Microb Genom. 2023;9(12):001145. doi:[10.1099/mgen.0.001145](https://doi.org/10.1099/mgen.0.001145)
 
 
