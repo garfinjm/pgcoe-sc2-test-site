@@ -4,21 +4,20 @@ layout: page
 nav_order: 5
 ---
 
-<!---
-Table of contents goes here
--->
-## Table of Contents
-- [Data Upload Methods](#data-upload-methods)
-- [Creation of Intermediate Read Storage](#creation-of-intermediate-read-storage)
+# Read Uploads
+{: .no_toc }
+
+- **Table of Contents**
+{:toc}
 
 <!---
 Sections start here
 -->
 
-# Data Upload Methods 
+## Data Upload Methods 
 
-# Creation of Intermediate Read Storage 
+## Creation of Intermediate Read Storage 
 
-# Human Read Scrubbing 
+## Human Read Scrubbing 
 
-# Common Experimental Metadata Values for Frequently Used Lab Protocols 
+## Common Experimental Metadata Values for Frequently Used Lab Protocols 
