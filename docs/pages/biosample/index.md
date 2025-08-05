@@ -38,7 +38,7 @@ Below, are a list of select metadata issues that frequently pose problems.
 | geo\_loc\_name | This field must contain the designated format of "country:region". See [this page](https://www.insdc.org/submitting-standards/geo_loc_name-qualifier-vocabulary) for a list of acceptable options.|
 | host | This field must contain the full taxonomic name of the species, for instance, "Homo sapiens", not "Human". Refer to [NCBI Taxonomy](https://www.ncbi.nlm.nih.gov/taxonomy) for specific terms. |
 | host\_disease | This field must contain controlled vocabulary: <http://bioportal.bioontology.org/ontologies/1009> |
-| organism | As with �host�, the organism of the sample should include the complete and unabbreviated genus and species name. Please use the species name in the [NCBI taxonomy database,](https://www.ncbi.nlm.nih.gov/taxonomy/) if possible. If the species is unknown, provide the genus followed by �sp.� rather than a specific species name. |
+| organism | As with "host", the organism of the sample should include the complete and unabbreviated genus and species name. Please use the species name in the [NCBI taxonomy database,](https://www.ncbi.nlm.nih.gov/taxonomy/) if possible. If the species is unknown, provide the genus followed by "sp." rather than a specific species name. |
 
 ## Missing Metadata Recommendations
 
