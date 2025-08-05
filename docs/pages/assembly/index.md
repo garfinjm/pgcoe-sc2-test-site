@@ -63,8 +63,8 @@ When submitting samples to NCBI, there are multiple guidelines on what informati
 
 The primary method of submitting bacterial genomes to NCBI is through the [NCBI Submission Portal "Genome" page](https://submit.ncbi.nlm.nih.gov/subs/genome/). This user-friendly web interface allows submission single genomes or batches of up to 400 genomes. Sample metadata is provided either by filling in a series of forms (for single sample submissions) or by filling out and uploading structured spreadsheet/csv files with sample metadata.
 
-> {: .warning }
-> All the samples in a batch submission must share a common set of features: BioProject, release date, assembly type, file type (FASTA or SQN), gap/Ns details, publication information, and PGAP request status.
+{: .warning }
+All the samples in a batch submission must share a common set of features: BioProject, release date, assembly type, file type (FASTA or SQN), gap/Ns details, publication information, and PGAP request status.
 
 Genome and annotation data files can be uploaded through several mechanisms:
 
@@ -74,15 +74,15 @@ Genome and annotation data files can be uploaded through several mechanisms:
 3. Aspera protocol (Good for large datasets or many files)
    1. This method can be used via the Aspera browser plugin, or the Aspera command line tool.
 
-> {: .note }
-> Options 2 and 3 above require configuring your FTP/Aspera client with [credentials provided](https://submit.ncbi.nlm.nih.gov/subs/genome/) on the NCBI Genome website.
+{: .note }
+Options 2 and 3 above require configuring your FTP/Aspera client with [credentials provided](https://submit.ncbi.nlm.nih.gov/subs/genome/) on the NCBI Genome website.
 
 ### Submission Mechanics: most viruses
 
 Email a friendly message with an attached zipped sqn file (the output of table2asn) to [gb-sub@ncbi.nlm.nih.gov](mailto:gb-sub@ncbi.nlm.nih.gov). There is no FTP/XML submission option currently. You cannot use the normal NCBI submission web portal (there is a special but different web portal called [BankIt](https://www.ncbi.nlm.nih.gov/WebSub/) instead, but email is easier honestly). You will hear back from them usually within a business day with any curation back and forth.
 
-> { .note}
-> Viral genome submissions cannot be linked to NCBI submission groups currently - they will be only associated with your personal NCBI account.
+{: .note}
+Viral genome submissions cannot be linked to NCBI submission groups currently - they will be only associated with your personal NCBI account.
 
 ### Submission Mechanics: special viruses (SARS-CoV-2, Influenza A/B/C, Norovirus, Dengue Virus)
 *Writing in progress*
