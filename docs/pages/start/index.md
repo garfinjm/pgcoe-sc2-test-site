@@ -20,13 +20,13 @@ Sections start here
 NCBI contains a wealth of biomedical and genomic information. Submitting sequence data to NCBI involves using and understanding the relationship between several resources:
 
 * **GenBank/RefSeq** - These resources primarily store assembled sequence data and metadata about how a sequence was assembled.
-  + > {: .note } 
-    > In some cases, limited metadata about the biological sample that was used to generate the sequence may be included.
+  > {: .note } 
+  > In some cases, limited metadata about the biological sample that was used to generate the sequence may be included.
 * **Sequence Read Archive (SRA)** - A database of raw sequencing reads and metadata about sequencing methods.
 * **BioSample** - Data about the biological specimen which was the starting point for sequencing.
 * **BioProject** - An organizational structure that links data for a single research or surveillance project stored in other NCBI databases together.
-  + > {: .note } 
-    > Umbrella BioProjects are a special BioProject type that only contains other BioProjects.
+  > {: .note } 
+  > Umbrella BioProjects are a special BioProject type that only contains other BioProjects.
 
 These resources can be linked into a hierarchy as the figure below from [Timme et al. (2023)](https://pubmed.ncbi.nlm.nih.gov/38085797/) shows graphically (excluding umbrella BioProjects):
 

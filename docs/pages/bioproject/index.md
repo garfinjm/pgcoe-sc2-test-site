@@ -1,10 +1,10 @@
 ---
-title: "Bioprojects"
+title: "BioProjects"
 layout: page
 nav_order: 3
 ---
 
-# Bioprojects
+# BioProjects
 {: .no_toc }
 
 - **Table of Contents**
