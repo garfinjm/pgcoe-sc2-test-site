@@ -6,12 +6,13 @@ nav_order: 1
 
 ## Welcome
 
-*Site-Name-TBD* was created by members of the Pathogen Genomics Centers of Excellence to provide additional documentation for public health workers who want to share their sequence data on NCBI. NCBI's own documentation is necessarily general due to its many use cases and long history. This site provides an additional layer of documentation for NCBI data submission tailored to common public health use cases, with the goal of helping public health workers overcome the most common technical hurdles to sharing their data.
+
+This website was created by members of the [Pathogen Genomics Center of Excellence (PGCOE)](https://pgcoe.github.io/) to provide additional documentation for public health workers who want to share their sequence data on the [National Center for Biotechnology Information (NCBI)](https://www.ncbi.nlm.nih.gov/). NCBI's own documentation is necessarily general due to its many use cases and long history. This site provides an additional layer of documentation for NCBI data submission tailored to common public health use cases, with the goal of helping public health workers overcome the most common technical hurdles to sharing their data.
 
 ### Intended Audience
 
-Who: Public health infectious disease scientists who want to share their sequence data on NCBI, particularly those who are new to the process of submitting data.
+Infectious disease scientists working in public health who want to share their sequence data publicly on NCBI, particularly those who are new to the process of submitting data.
 
 ### Contact
 
-*Contact info/method TBD.*
+This site was created by the [Pathogen Centers of Excellence](https://pgcoe.github.io/) Response Base Group. Any questions, corrections, comments, or suggestions related to the materials on this site can be directed to our [GitHub issues page](Https://link.goes.here.eventually.com).

@@ -2,5 +2,6 @@
 title: "Tips & Tricks"
 layout: page
 nav_order: 7
+nav_exclude: true
 ---
-*Writing in progress*
+*This is a placeholder*
