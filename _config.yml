@@ -1,11 +1,13 @@
 title: PGCoE SC2 Test Site
-description: Test site for PGCoE Subcommittee 2
+description: Supplemental NCBI documentation for public health scientists.
 theme: just-the-docs
 
 url: https://nwpage.org/
 
 aux_links:
-  PGCoE Site: https://nwpage.org/
+  PGCoE Main Site: https://pgcoe.github.io/
+
+heading_anchors: true
 
 callouts:
   note:

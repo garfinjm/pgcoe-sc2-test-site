@@ -24,8 +24,10 @@ Submitting sequencing data to NCBI databases in batches can greatly improve the 
 
 Additionally, all data submitted within a batch submission must be submitted to only one BioProject. Only [up to 400 genomes](https://www.ncbi.nlm.nih.gov/genbank/genomesubmit/#batch) may be submitted in a single batch to GenBank via the [Genome Submission Portal](https://submit.ncbi.nlm.nih.gov/subs/genome/) for Prokaryotic and Eukaryotic organisms. Most batch submissions must be of the same type. 
 
-{: .example }
-For example: a batch BioSample submission must all use the same BioSample package (don't mix packages in one submission). Eukaryotic genome submissions must be separate from bacterial submissions. Influenza A submissions must be separate from Influenza B, which must also be separate from general non-special viral submissions <Insert link to Submission Mechanics section here>.
+{: .important }
+> All samples in a batch BioSample submission must use the same BioSample package. If your samples use more than one BioSample package they should be split into two submissions.
+> > {: .example } 
+> > Eukaryotic genome submissions must be separate from bacterial submissions. Influenza A submissions must be separate from Influenza B, which must also be separate from general non-special viral submissions.
 
 ## Human Read Scrubbing
 
