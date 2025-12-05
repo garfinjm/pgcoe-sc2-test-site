@@ -25,7 +25,7 @@ Below is a flowchart to aid in the selection of the appropriate BioSample packag
 > ![BioSample package selection flowchart](../../media/Biosample_Package_Flowchart.png)
 
 {: .note }
-NCBI has additional BioSample packages that are unique to specific projects (MIGS, MIMAG, MIMARKS, MIMS, MISAG, MIUVIG). If your funding and data are not associated with any of these projects, it is OK to ignore these. More information can be found at: https://www.gensc.org/pages/standards-intro.html
+> NCBI has additional BioSample packages that are unique to specific projects (MIGS, MIMAG, MIMARKS, MIMS, MISAG, MIUVIG). If your funding and data are not associated with any of these projects, it is OK to ignore these. More information can be found at: https://www.gensc.org/pages/standards-intro.html
 
 ## Frequent Metadata Issues
 
@@ -45,8 +45,8 @@ Below, we list select metadata issues that frequently pose issues.
 
 There are many instances where NCBI's required metadata fields are not available or feasible to provide. In these cases, refer to the controlled vocabulary in your BioSample package template to determine the preferred way to note missing or withheld data for a given field. For required fields without a controlled vocabulary, consider using `not applicable` or `missing`.
 
-{: .warning }
-While compiling and formatting sequence metadata can be tedious and time consuming, it's important to provide as much metadata as possible when submitting public sequence data to NCBI. In general, **the less metadata accompanying a public sequence data submission, the less useful that sequence data will be to other researchers and public health initiatives.**
+{: .important }
+> While compiling and formatting sequence metadata can be tedious and time consuming, it's important to provide as much metadata as possible when submitting public sequence data to NCBI. In general, **the less metadata accompanying a public sequence data submission, the less useful that sequence data will be to other researchers and public health initiatives.**
 
 ## Reducing Identifiability of Sequence Data
 

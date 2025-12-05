@@ -53,7 +53,7 @@ There are multiple international bodies that exist to aid in the naming of speci
 When submitting samples to NCBI, there are multiple guidelines on what information should be included in a submission based on specific recommendations for that particular species. Well characterized and popularly submitted viruses, such as influenza and SARS-CoV-2, have well established schemas that are recommended by multiple bodies. 
 
 {: .example }
-In the case of SARS-CoV-2 ICTV released the following naming convention for individual isolates: SARS-CoV-2/host/location/isolate/date. Further recommendations by the CDC proposed simplifying naming conventions to include country/state-lab-sample/year information when submitting to public repositories like GISAID and NCBI. In certain instances, these simplifications are aimed at reducing personally identifiable information (PII), subsequently reducing the likelihood that a sample will not be uploaded to avoid being identified by it's name. 
+> In the case of SARS-CoV-2 ICTV released the following naming convention for individual isolates: SARS-CoV-2/host/location/isolate/date. Further recommendations by the CDC proposed simplifying naming conventions to include country/state-lab-sample/year information when submitting to public repositories like GISAID and NCBI. In certain instances, these simplifications are aimed at reducing personally identifiable information (PII), subsequently reducing the likelihood that a sample will not be uploaded to avoid being identified by it's name. 
 
 It is generally suggested that submitters look to [ICTV](https://ictv.global/) to see if there is a naming schema available for their virus of interest. If none is available, consider looking to other closely related viruses for guidance.
 
@@ -63,8 +63,8 @@ It is generally suggested that submitters look to [ICTV](https://ictv.global/) t
 
 The primary method of submitting bacterial genomes to NCBI is through the [NCBI Submission Portal "Genome" page](https://submit.ncbi.nlm.nih.gov/subs/genome/). This user-friendly web interface allows submission of single genomes or batches of up to 400 genomes. Sample metadata is provided either by filling in a series of forms (for single sample submissions) or by filling out and uploading structured spreadsheet/CSV files with sample metadata.
 
-{: .caution }
-All samples in a batch submission must share a common set of features: BioProject, release date, assembly type, file type (FASTA or .sqn), gap/Ns details, publication information, and PGAP request status.
+{: .important }
+>All samples in a batch submission must share a common set of features: BioProject, release date, assembly type, file type (FASTA or .sqn), gap/Ns details, publication information, and PGAP request status.
 
 Genome and annotation data files can be uploaded through several mechanisms:
 
@@ -75,32 +75,31 @@ Genome and annotation data files can be uploaded through several mechanisms:
    1. This method can be used via the Aspera browser plugin, or the Aspera command line tool.
 
 {: .note }
-Options 2 and 3 above require configuring your FTP/Aspera client with [credentials provided](https://submit.ncbi.nlm.nih.gov/subs/genome/) on the NCBI Genome. These credentials only appear when logged into NCBI.
+> Options 2 and 3 above require configuring your FTP/Aspera client with [credentials provided on the NCBI Genome website](https://submit.ncbi.nlm.nih.gov/subs/genome/) . These credentials only appear when logged into NCBI.
 
 ### Submission Mechanics: Most Viruses
 
-To submit a genome for a virus that is not part of the "special virus" group (see below)<PUT LINK HERE>, email [mgb-sub@ncbi.nlm.nih.gov](mailto:mgb-sub@ncbi.nlm.nih.gov) and attach a zipped .sqn file (the output of [table2asn](https://www.ncbi.nlm.nih.gov/genbank/table2asn/)). Typically, NCBI staff will reply within a business day for any clarifications or curation issues after a submission email is sent. Currently there is no FTP/XML submission option available and the normal NCBI submission web portal cannot be used. A separate, web portal called [BankIt](https://www.ncbi.nlm.nih.gov/WebSub/) can be used as an alternative to email. However, email is generally the easier process. Viral genome submissions cannot be linked to NCBI submission groups currently, they are only associated with the submitter's personal NCBI account.
+To submit a genome for a virus that is not part of the "special virus" group [(see below)](#submission-mechanics-special-viruses-sars-cov-2-influenza-abc-norovirus-dengue-virus), email [mgb-sub@ncbi.nlm.nih.gov](mailto:mgb-sub@ncbi.nlm.nih.gov) and attach a zipped .sqn file (the output of [table2asn](https://www.ncbi.nlm.nih.gov/genbank/table2asn/)). Typically, NCBI staff will reply within a business day for any clarifications or curation issues after a submission email is sent. Currently there is no FTP/XML submission option available and the normal NCBI submission web portal cannot be used. A separate, web portal called [BankIt](https://www.ncbi.nlm.nih.gov/WebSub/) can be used as an alternative to email. However, email is generally the easier process. Viral genome submissions cannot be linked to NCBI submission groups currently, they are only associated with the submitter's personal NCBI account.
 
 ### Submission mechanics: special viruses (SARS-CoV-2, Influenza A/B/C, Norovirus, Dengue Virus)
 
-SARS-CoV-2, Influenza A/B/C, Norovirus and Dengue Virus (referred to hereafter as special viruses) cannot be submitted via the path described for other viruses above <INSERT LINK TO SECTION>. Instead, these special viruses are submitted via the [web-based GenBank section](https://submit.ncbi.nlm.nih.gov/subs/genbank/) of NCBI's Submission Portal or via FTP.
+SARS-CoV-2, Influenza A/B/C, Norovirus and Dengue Virus (referred to hereafter as special viruses) cannot be submitted via [the path described for other viruses above](#submission-mechanics-most-viruses). Instead, these special viruses are submitted via the [web-based GenBank section](https://submit.ncbi.nlm.nih.gov/subs/genbank/) of NCBI's Submission Portal or via FTP.
 
 #### Submission via NCBI's GenBank Submission Portal
 
-NCBI's GenBank Submission Portal is a straightforward web-based interface for submitting assembled special virus sequences to NCBI. Submission requires a FASTA of your sequence and a TSV file containing metadata about the sequence. At minimum, submissions must include the collection date, genotype, geographic location where the sample was collected, host, isolation source, assembly method, and a name for the isolate. These metadata can be provided either using a TSV file (a template is provided during the submission process) or by filling in an interactive form on the website. While it is best to provide as much metadata as possible about your sequence, it is acceptable to use `unknown` for many of these fields. In some cases, it may be necessary to submit with less specific metadata due to privacy concerns, for more information see this page <link here to other page>.
+NCBI's GenBank Submission Portal is a straightforward web-based interface for submitting assembled special virus sequences to NCBI. Submission requires a FASTA of your sequence and a TSV file containing metadata about the sequence. At minimum, submissions must include the collection date, genotype, geographic location where the sample was collected, host, isolation source, assembly method, and a name for the isolate. These metadata can be provided either using a TSV file (a template is provided during the submission process) or by filling in an interactive form on the website. While it is best to provide as much metadata as possible about your sequence, it is acceptable to use `unknown` for many of these fields. In some cases, it may be necessary to submit with less specific metadata due to privacy concerns, for more information see [this page]({% link biosample/index.md#reducing-identifiability-of-sequence-data %}).
 
 #### Submission of special viruses via FTP
 
-Large batches of Influenza A/B/C and SARS-CoV-2 can also be submitted via FTP (see here for FTP setup information <LINK TO Submission options: Web Portal vs FTP API>, but Norovirus and Dengue must go through the GenBank Submission Portal. FTP submissions must include a FASTA containing sequence data, an .src file containing sequence metadata (see the <LINK Most Viruses> section for more info), and a .sbt file containing the author list. Optionally, structured comment file (.cmt) may be included containing information about sequencing coverage per segment/sample.
-
+Large batches of Influenza A/B/C and SARS-CoV-2 can also be submitted via FTP [(see the bacterial submission mechanics section for more info on setting up FTP submissions)](#submission-mechanics-bacteria), but Norovirus and Dengue must go through the [GenBank Submission Portal](https://submit.ncbi.nlm.nih.gov/subs/genbank/). FTP submissions must include a FASTA containing sequence data, an .src file containing sequence metadata, and a .sbt file containing the author list (See [NCBI's documentation on table2asn](https://www.ncbi.nlm.nih.gov/genbank/table2asn/) for more info on these files). Optionally, structured comment file (.cmt) may be included containing information about sequencing coverage per segment/sample.
 
 Special virus submissions must be separated by species/subtype. 
 
 {: .example }
-SARS-CoV-2 and Influenza cannot be uploaded in the same submission. This also applies to strains of the same virus such as Influenza A and B.
+> SARS-CoV-2 and Influenza cannot be uploaded in the same submission. This also applies to strains of the same virus such as Influenza A and B.
 
 {: .note }
-Influenza D is not a special virus and must be submitted via table2asn/BankIt like most other viruses. <LINK>
+> Influenza D is not a special virus and must be submitted [via table2asn/BankIt like most other viruses](#submission-mechanics-most-viruses).
 
 ### Virus-Specific Considerations
 
@@ -120,15 +119,15 @@ As of mid-2024, NCBI will automatically group Influenza GenBank accessions for e
 
 Currently, influenza sequences are annotated and error checked at NCBI using a tool called [FLAN](https://pubmed.ncbi.nlm.nih.gov/17545199/). In the future, NCBI plans to switch over to [VADR](https://github.com/ncbi/vadr), but that has not transpired as of late 2025. Influenza virus genome submissions can be pre-screened with VADR to ensure that they will pass NCBI's quality checks. 
 
-{: .note }
-Some genomes pre-screened with VADR may fail FLAN validation upon submission. If this happens, the submitter can reply to the automated email from NCBI for that submission and request that the failing sequences be permitted based on the passing VADR results. NCBI can then upload them manually. This process will need to be followed for every submission.
+{: .tip }
+> Some genomes pre-screened with VADR may fail FLAN validation upon submission. If this happens, the submitter can reply to the automated email from NCBI for that submission and request that the failing sequences be permitted based on the passing VADR results. NCBI will then upload them manually. This process will need to be followed for every submission.
 
 #### SARS-CoV-2 Specific Considerations
 
 SARS-CoV-2 sequences are annotated and error checked at NCBI via [VADR](https://github.com/ncbi/vadr) after submission. If submissions have been pre-screened with VADR prior to submission and only passing (no alerts) sequences uploaded, all sequences should pass NCBI upload.
 
 {: .note }
-When submitting a batch of SARS-CoV-2 assemblies through the web portal, users are given the option whether they want NCIB's systems to reject the whole batch when a sample fails VADR, or to allow the passing samples to be accepted and have the failing samples rejected.
+>When submitting a batch of SARS-CoV-2 assemblies through the web portal, users are given the option whether they want NCIB's systems to reject the whole batch when a sample fails VADR, or to allow the passing samples to be accepted and have the failing samples rejected.
 
 The community has a specific naming convention for SARS-CoV-2 genomes including the host (e.g. human), country, state, year, etc. (ex. SARS-CoV-2/human/USA/CA-CDPH-001/2020). For additional details and other SARS-CoV-2-specific metadata standards see the [PHA4GE SARS-CoV-2 Contextual Data Specification](https://github.com/pha4ge/sars-cov-2-contextual-data-specification).
 

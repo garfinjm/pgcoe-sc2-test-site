@@ -22,11 +22,11 @@ This site aims to aid public health workers who want to share their sequence dat
 NCBI contains a wealth of biomedical and genomic information. Submitting sequence data to NCBI involves using and understanding the relationship between several resources:
 
 - GenBank/RefSeq - These resources primarily store assembled sequence data and metadata about how a sequence was assembled.
-  - NOTE: In some cases, limited metadata about the biological sample that was used to generate the sequence may also be included.
+  - {: .note } In some cases, limited metadata about the biological sample that was used to generate the sequence may also be included.
 - Sequence Read Archive (SRA) - A database of raw sequencing reads and metadata about sequencing methods.
 - BioSample - Data about the biological specimen which was the starting point for sequencing.
 - BioProject - An organizational structure that links data for a single research or surveillance project stored in other NCBI databases.
-  - NOTE: Umbrella BioProjects are a special BioProject type that only contain other BioProjects.
+  - {: .note } Umbrella BioProjects are a special BioProject type that only contain other BioProjects.
 
 These resources can be linked into a hierarchy as the figure below from [Timme et al. (2023)](https://doi.org/10.1099/mgen.0.001145) shows graphically:
 
@@ -47,7 +47,7 @@ Genomic data submitted to NCBI is not completely dependent on US government supp
 
 ## Institutional Submission Frequency Considerations
 
-Data submissions to NCBI can be a tedious and time-consuming process. Laboratories must not only compile the data but also gather and standardize the associated metadata. Additionally, it is often necessary to further process the data to remove human or host reads before submission. Various tools are available to assist with these tasks, see <TODO: Put link here>. Despite these resources, the submission process requires a considerable investment of time to ensure that all data are accurately submitted, and that accessions and submissions are effectively managed. To enhance efficiency, many laboratories may opt for batch submissions at regular intervals, such as weekly or according to a schedule that aligns with their operational needs. However, it is crucial not to delay submissions for extended periods, as timely data sharing is essential for supporting ongoing public health initiatives, particularly during outbreaks or pandemics.
+Data submissions to NCBI can be a tedious and time-consuming process. Laboratories must not only compile the data but also gather and standardize the associated metadata. Additionally, it is often necessary to further process the data to remove human or host reads before submission. Various tools are available to assist with these tasks, for example: NCBI's [sra-human-scrubber](https://github.com/ncbi/sra-human-scrubber), [hostile](https://github.com/bede/hostile), and [nohuman](https://github.com/mbhall88/nohuman). Despite these resources, the submission process requires a considerable investment of time to ensure that all data are accurately submitted, and that accessions and submissions are effectively managed. To enhance efficiency, many laboratories may opt for batch submissions at regular intervals, such as weekly or according to a schedule that aligns with their operational needs. However, it is crucial not to delay submissions for extended periods, as timely data sharing is essential for supporting ongoing public health initiatives, particularly during outbreaks or pandemics.
 
 ## Creating an NCBI Submission Group
 
@@ -59,10 +59,13 @@ The steps detailed above can only be done once per NCBI account (i.e. each NCBI 
 
 ## Submission options: Web Portal vs FTP API
 
-NCBI offers two primary pathways for submitting genomic data, each suited to different laboratory workflows and submission volumes. The NCBI [Submission Portal](https://submit.ncbi.nlm.nih.gov/) provides a user-friendly web interface that guides users through the submission process step-by-step with forms, wizards, and interactive validation. This approach is ideal for laboratories that are new to NCBI submission, submit data infrequently, or work with smaller batches of samples. The web portal allows users to upload files directly through their browser and provides immediate feedback on metadata formatting and submission status.
+NCBI offers two primary pathways for submitting genomic data, each suited to different laboratory workflows and submission volumes. The NCBI [Submission Portal](https://submit.ncbi.nlm.nih.gov/) provides a user-friendly web interface that guides users through the submission process step-by-step with forms, wizards, and interactive validation. This approach is ideal for laboratories that are new to NCBI submission, submit data infrequently, or work with smaller batches of samples. The web portal allows users to upload files directly through their browser and provides immediate feedback on {metadata formatting and submission status.
 
 For laboratories with high-throughput sequencing operations, frequent submission schedules, or established bioinformatics pipelines, NCBI also supports programmatic submission via File Transfer Protocol (FTP) Secure FTP (SFTP) to their [submission server](https://sftp://sftp-private.ncbi.nlm.nih.gov). These methods enable automated workflows where metadata and sequence files can be prepared in standardized formats and submitted without human intervention, making it particularly attractive for high volume sequencing labs. Generally, the same set of submission files are required for FTP as with the web portal but need to be packaged in a specific way before uploading.
 
 Utilizing an SFTP-based pathway requires a one-time setup of a "Center Account" which functions like a Submission Group in the web portal but also provides credentials for accessing NCBI's FTP servers. Setting up a Center Account for the first time requires contacting NCBI by emailing [sra@ncbi.nlm.nih.gov](mailto:sra@ncbi.nlm.nih.gov).
 
-The choice between methods often depends on your laboratory's submission frequency and technical capacity. It is advised to start with the web portal to become familiar with NCBI's requirements and workflows, then to consider transitioning to FTP-based methods as your submission volume and automation needs grow. Note that not all pathogens are accepted over FTP for GenBank submission. Some documentation and examples of XML/ZIP payloads and server responses for FTP submission are available in NCBI's [documentation](https://github.com/ncbi/submission-schema).
+The choice between methods often depends on your laboratory's submission frequency and technical capacity. It is advised to start with the web portal to become familiar with NCBI's requirements and workflows, then to consider transitioning to FTP-based methods as your submission volume and automation needs grow. 
+
+{: .note }
+ Not all pathogens are accepted over FTP for GenBank submission. Some documentation and examples of XML/ZIP payloads and server responses for FTP submission are available in NCBI's [documentation](https://github.com/ncbi/submission-schema).
