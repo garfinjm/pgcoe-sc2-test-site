@@ -45,7 +45,7 @@ If a closely-related (no major inversions or transpositions) reference genome is
 ## Genome Naming and Species Differentiations
 
 There are multiple international bodies that exist to aid in the naming of species and to help create structure around species naming conventions and submission to international repositories. These international bodies are distinct for the different taxonomic classes of organisms. There are three main taxonomic separations included in NCBI: 
-- Prokaryotes fall under the [International Code of Nomenclature of Prokaryotes](https://the-icsp.org/code-of-nomenclatur) (curated by [ICSP](http://www.the-icsp.org/judicial-commission-on-prokaryote-nomenclature))
+- Prokaryotes fall under the [International Code of Nomenclature of Prokaryotes](https://the-icsp.org/code-of-nomenclatur) (curated by [ICSP](http://www.the-icsp.org/))
 - Animals fall under the [International Code of Zoological Nomenclature](https://www.iczn.org/the-code/the-code-online/) (curated by [ICZN](https://www.iczn.org/))
 - Plants, algae, and fungi fall under the [International Code of Nomenclature For Algae, Fungi, and Plants](https://www.iaptglobal.org/_functions/code/madrid) (curated by [IAPT](https://www.iaptglobal.org/)). 
 - Viruses, do not have a code of nomenclature, but instead fall under the recommendations from the [International Committee on Taxonomy of Viruses](https://ictv.global/).
@@ -87,7 +87,7 @@ SARS-CoV-2, Influenza A/B/C, Norovirus and Dengue Virus (referred to hereafter a
 
 #### Submission via NCBI's GenBank Submission Portal
 
-NCBI's GenBank Submission Portal is a straightforward web-based interface for submitting assembled special virus sequences to NCBI. Submission requires a FASTA of your sequence and a TSV file containing metadata about the sequence. At minimum, submissions must include the collection date, genotype, geographic location where the sample was collected, host, isolation source, assembly method, and a name for the isolate. These metadata can be provided either using a TSV file (a template is provided during the submission process) or by filling in an interactive form on the website. While it is best to provide as much metadata as possible about your sequence, it is acceptable to use `unknown` for many of these fields. In some cases, it may be necessary to submit with less specific metadata due to privacy concerns, for more information see [this page](docs/biosample/index.md#reducing-identifiability-of-sequence-data).
+NCBI's GenBank Submission Portal is a straightforward web-based interface for submitting assembled special virus sequences to NCBI. Submission requires a FASTA of your sequence and a TSV file containing metadata about the sequence. At minimum, submissions must include the collection date, genotype, geographic location where the sample was collected, host, isolation source, assembly method, and a name for the isolate. These metadata can be provided either using a TSV file (a template is provided during the submission process) or by filling in an interactive form on the website. While it is best to provide as much metadata as possible about your sequence, it is acceptable to use `unknown` for many of these fields. In some cases, it may be necessary to submit with less specific metadata due to privacy concerns, for more information see [this page](/docs/pages/biosample/index.html#reducing-identifiability-of-sequence-data).
 
 #### Submission of special viruses via FTP
 
