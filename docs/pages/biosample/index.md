@@ -25,7 +25,7 @@ Below is a flowchart to aid in the selection of the appropriate BioSample packag
 > ![BioSample package selection flowchart](../../media/Biosample_Package_Flowchart.svg)
 
 {: .note }
-> NCBI has additional BioSample packages that are unique to specific projects (MIGS, MIMAG, MIMARKS, MIMS, MISAG, MIUVIG). If your funding and data are not associated with any of these projects, it is OK to ignore these. More information can be found at: https://www.gensc.org/pages/standards-intro.html
+> NCBI has additional BioSample packages that are unique to specific projects (MIGS, MIMAG, MIMARKS, MIMS, MISAG, MIUVIG). If your funding and data are not associated with any of these projects, it is OK to ignore these. More information can be found [here.]](https://www.gensc.org/pages/standards-intro.html)
 
 ## Frequent Metadata Issues
 
@@ -58,11 +58,11 @@ However, in some cases it may be necessary to withhold sample metadata to reduce
 
 | BioSample Package | Organism | Link |
 | --- | --- | --- |
-| One Health Enteric | Influenza (agricultural) | https://www.ncbi.nlm.nih.gov/biosample/SAMN41749032 |
-| Pathogen: clinical or host-associated | *Bordetella pertussis* | https://www.ncbi.nlm.nih.gov/biosample/SAMN46491808 |
-| Pathogen: clinical or host-associated | *Candidozyma auris* | https://www.ncbi.nlm.nih.gov/biosample/SAMN48938922 |
-| Pathogen: clinical or host-associated | Influenza (human) | https://www.ncbi.nlm.nih.gov/biosample/SAMN46122168 |
-| Pathogen: clinical or host-associated | Mpox | https://www.ncbi.nlm.nih.gov/biosample/SAMN48179747 |
-| Pathogen: clinical or host-associated | Mycobacterium tuberculosis | https://www.ncbi.nlm.nih.gov/biosample/SAMN46723454 |
-| SARS-CoV-2: clinical or host-associated | SARS-CoV-2 | https://www.ncbi.nlm.nih.gov/biosample/SAMN39609935 |
-| SARS-CoV-2: wastewater surveillance | SARS-CoV-2 Wastewater | https://www.ncbi.nlm.nih.gov/biosample/SAMN48971801 |
+| One Health Enteric | Influenza (agricultural) | [SAMN41749032](https://www.ncbi.nlm.nih.gov/biosample/SAMN41749032) |
+| Pathogen: clinical or host-associated | *Bordetella pertussis* | [SAMN46491808](https://www.ncbi.nlm.nih.gov/biosample/SAMN46491808) |
+| Pathogen: clinical or host-associated | *Candidozyma auris* | [SAMN48938922](https://www.ncbi.nlm.nih.gov/biosample/SAMN48938922) |
+| Pathogen: clinical or host-associated | Influenza (human) | [SAMN46122168](https://www.ncbi.nlm.nih.gov/biosample/SAMN46122168) |
+| Pathogen: clinical or host-associated | Mpox | [SAMN48179747](https://www.ncbi.nlm.nih.gov/biosample/SAMN48179747) |
+| Pathogen: clinical or host-associated | Mycobacterium tuberculosis | [SAMN46723454](https://www.ncbi.nlm.nih.gov/biosample/SAMN46723454) |
+| SARS-CoV-2: clinical or host-associated | SARS-CoV-2 | [SAMN39609935](https://www.ncbi.nlm.nih.gov/biosample/SAMN39609935) |
+| SARS-CoV-2: wastewater surveillance | SARS-CoV-2 Wastewater | [SAMN48971801](https://www.ncbi.nlm.nih.gov/biosample/SAMN48971801) |
