@@ -1,16 +1,17 @@
 $color-scheme: pgcoe !default;
-$body-background-color: #055A5E;
+$body-background-color: #f7f7f7;
 $body-heading-color: #055A5E;
 $body-text-color: #000000;
-$link-color: $blue-000;
+$link-color: #055A5E;
+$nav-link-color: #055A5E;
 $nav-child-link-color: #055A5E;
-$sidebar-color: #01B1D3;
+$sidebar-color: #DCE7E8;
 $base-button-color: #f7f7f7;
-$btn-primary-color: $purple-100 !default;
-$code-background-color: $grey-lt-000 !default;
-$feedback-color: darken($sidebar-color, 3%) !default;
-$table-background-color: $white !default;
-$search-background-color: $white !default;
-$search-result-preview-color: $grey-dk-000 !default;
+$btn-primary-color: #055A5E;
+$code-background-color: $grey-lt-000;
+$feedback-color: darken($sidebar-color, 3%);
+$table-background-color: #f7f7f7;
+$search-background-color: #f7f7f7;
+$search-result-preview-color: $grey-dk-000;
 
 @import "./vendor/OneLightJekyll/syntax";
