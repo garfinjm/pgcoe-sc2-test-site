@@ -5,6 +5,10 @@ color_scheme: pgcoe
 
 url: https://nwpage.org/
 
+logo: "/docs/media/pgcoe-network-graphic-element.png"
+favicon_ico: "/docs/media/pgcoe-network-graphic-element.png"
+
+
 aux_links:
   PGCoE Main Site: https://pgcoe.github.io/
 
