@@ -1,3 +1,8 @@
+$pgcoeteal-000: #e5fafe;
+$pgcoeteal-100: #b2f2fe;
+$pgcoeteal-200: #66e5fe;
+$pgcoeteal-300: #01B1D3;
+
 $color-scheme: pgcoe;
 $body-background-color: #f7f7f7;
 $body-heading-color: #055A5E;
@@ -5,7 +10,7 @@ $body-text-color: #000000;
 $link-color: #055A5E;
 $nav-link-color: #055A5E;
 $nav-child-link-color: #055A5E;
-$sidebar-color: #01B1D3;
+$sidebar-color: $pgcoeteal-300;
 $base-button-color: #f7f7f7;
 $btn-primary-color: #055A5E;
 $code-background-color: $grey-lt-000;
