@@ -24,7 +24,7 @@ In cases where NCBI's automatic annotation is not desired, [Bakta](https://githu
 
 There are many other tools for genome annotation and methods of submitting bacterial genomes to NCBI available, but the options above are suitable for most public health use cases.
 
-## Submission Mechanics
+## Bacterial Submission Mechanics
 
 The primary method of submitting bacterial genomes to NCBI is through the [NCBI Submission Portal "Genome" page](https://submit.ncbi.nlm.nih.gov/subs/genome/). This user-friendly web interface allows submission of single genomes or batches of up to 400 genomes. Sample metadata is provided either by filling in a series of forms (for single sample submissions) or by filling out and uploading structured spreadsheet/CSV files with sample metadata.
 

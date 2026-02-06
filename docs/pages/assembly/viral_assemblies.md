@@ -23,30 +23,11 @@ If a closely-related (no major inversions or transpositions) reference genome is
 
 [VADR](https://github.com/ncbi/vadr) is a command line tool maintained by NCBI that can annotate bare viral genomes for species that have a previously built model. Although VADR was originally designed to support only a handful of viral taxa, the list of viral species with pre-built models is [increasing regularly](https://github.com/broadinstitute/viral-references/blob/main/annotation/vadr/vadr-by-taxid.tsv). [The VADR documentation for building models](https://github.com/ncbi/vadr/blob/master/documentation/build.md) for new taxa can be used with some effort.
 
-
-## Submission Mechanics: Bacteria
-
-The primary method of submitting bacterial genomes to NCBI is through the [NCBI Submission Portal "Genome" page](https://submit.ncbi.nlm.nih.gov/subs/genome/). This user-friendly web interface allows submission of single genomes or batches of up to 400 genomes. Sample metadata is provided either by filling in a series of forms (for single sample submissions) or by filling out and uploading structured spreadsheet/CSV files with sample metadata.
-
-{: .important }
->All samples in a batch submission must share a common set of features: BioProject, release date, assembly type, file type (FASTA or .sqn), gap/Ns details, publication information, and PGAP request status.
-
-Genome and annotation data files can be uploaded through several mechanisms:
-
-1. An upload button in the submission processes (Best option for low volumes or beginners)
-2. File Transfer Protocol (FTP) (Good for large datasets or many files)
-   1. This method can be used with GUI FTP clients (ex. WinSCP, Filezilla)or via the FTP command line tool.
-3. Aspera protocol (Good for large datasets or many files)
-   1. This method can be used via the Aspera browser plugin, or the Aspera command line tool.
-
-{: .note }
-> Options 2 and 3 above require configuring your FTP/Aspera client with [credentials provided on the NCBI Genome website](https://submit.ncbi.nlm.nih.gov/subs/genome/) . These credentials only appear when logged into NCBI.
-
 ## Submission Mechanics: Most Viruses
 
 To submit a genome for a virus that is not part of the "special virus" group [(see below)](#submission-mechanics-special-viruses-sars-cov-2-influenza-abc-norovirus-dengue-virus), email [mgb-sub@ncbi.nlm.nih.gov](mailto:mgb-sub@ncbi.nlm.nih.gov) and attach a zipped .sqn file (the output of [table2asn](https://www.ncbi.nlm.nih.gov/genbank/table2asn/)). Typically, NCBI staff will reply within a business day for any clarifications or curation issues after a submission email is sent. Currently there is no FTP/XML submission option available and the normal NCBI submission web portal cannot be used. A separate, web portal called [BankIt](https://www.ncbi.nlm.nih.gov/WebSub/) can be used as an alternative to email. However, email is generally the easier process. Viral genome submissions cannot be linked to NCBI submission groups currently, they are only associated with the submitter's personal NCBI account.
 
-## Submission mechanics: special viruses (SARS-CoV-2, Influenza A/B/C, Norovirus, Dengue Virus)
+## Submission mechanics: Special Viruses (SARS-CoV-2, Influenza A/B/C, Norovirus, Dengue Virus)
 
 SARS-CoV-2, Influenza A/B/C, Norovirus and Dengue Virus (referred to hereafter as special viruses) cannot be submitted via [the path described for other viruses above](#submission-mechanics-most-viruses). Instead, these special viruses are submitted via the [web-based GenBank section](https://submit.ncbi.nlm.nih.gov/subs/genbank/) of NCBI's Submission Portal or via FTP.
 
