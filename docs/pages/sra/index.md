@@ -26,7 +26,8 @@ Additionally, all data submitted within a batch submission must be submitted to 
 
 {: .important }
 > All samples in a batch BioSample submission must use the same BioSample package. If your samples use more than one BioSample package they should be split into two submissions.
-> {: .example } 
+> 
+> {: .example }
 > Eukaryotic genome submissions must be separate from bacterial submissions. Influenza A submissions must be separate from Influenza B, which must also be separate from general non-special viral submissions.
 
 ## Human Read Scrubbing

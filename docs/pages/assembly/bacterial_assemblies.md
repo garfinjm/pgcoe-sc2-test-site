@@ -1,5 +1,5 @@
 ---
-title: "Bacterial Assembly Submission"
+title: "Bacterial Assemblies"
 layout: page
 parent: "Assembly Uploads"
 nav_order: 1
@@ -16,7 +16,7 @@ Sections start here
 -->
 
 
-## Annotating and submitting bacterial genomes
+## Annotating Bacterial Genomes
 
 Annotation of bacterial genomes before submission to NCBI is optional, and in most cases unnecessary. Bacterial genomes submitted to NCBI without an annotation will be annotated by NCBI's [PGAP](https://www.ncbi.nlm.nih.gov/refseq/annotation_prok/) tool shortly after submission and made available on NCBI in addition to the submitted genome.
 

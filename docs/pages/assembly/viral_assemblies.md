@@ -1,5 +1,5 @@
 ---
-title: "Viral Assembly Submission"
+title: "Viral Assemblies"
 layout: page
 parent: "Assembly Uploads"
 nav_order: 2
@@ -15,7 +15,7 @@ nav_order: 2
 Sections start here
 -->
 
-## Annotating and submitting viral genomes
+## Annotating Viral Genomes
 
 Often, the hardest part of uploading viral assemblies to NCBI is the requirement to include gene annotations with genomes. You should seek out an automated gene annotation tool appropriate for your organism. A gene annotation tool would generally take as input 1) your bare unannotated genome FASTA and 2) some external reference data and produce a `.tbl` file that contains the gene names and locations in a coordinate space relative to your provided genome. The .tbl file would then be input to [table2asn](https://www.ncbi.nlm.nih.gov/genbank/table2asn/), a tool which formats sequence data an annotations which is required for submission to GenBank. Instructions for running table2asn to generate a .sqn file are [available on NCBI's website](https://www.ncbi.nlm.nih.gov/genbank/eukaryotic_genome_submission/). Running table2asn in batch mode may also require a Source table format (.src) file containing per-sequence metadata. For additional details see [the table2asn documentation](https://www.ncbi.nlm.nih.gov/genbank/table2asn/#:~:text=Source%20table%20format).
 
