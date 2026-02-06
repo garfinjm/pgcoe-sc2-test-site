@@ -15,20 +15,33 @@ nav_order: 2
 Sections start here
 -->
 
-This site aims to aid public health workers who want to share their sequence data on NCBI. It is not intended as a replacement for NCBI's own documentation, but as a guide with additional information tailored to public health infectious disease scientists who want to publicly share their data. Public data repositories, such as the ones hosted by NCBI, represent the collection of knowledge, both known and yet to be discovered, whose value is incalculable. By contributing your own data, you not only share your discoveries but also aid the wider public health and scientific communities.
+This site aims to aid public health workers who want to share their pathogen sequence data on NCBI. It is not intended as a replacement for NCBI's own documentation, but as a guide with additional information tailored to public health infectious disease scientists who want to publicly share their data. Public data repositories, such as the ones hosted by NCBI, represent the collection of knowledge, both known and yet to be discovered, whose value is incalculable. By contributing your own data, you not only share your discoveries but also aid the wider public health and scientific communities.
 
 ## NCBI Structure
 
 NCBI contains a wealth of biomedical and genomic information. Submitting sequence data to NCBI involves using and understanding the relationship between several resources:
 
 - GenBank/RefSeq - These resources primarily store assembled sequence data and metadata about how a sequence was assembled.
-  - {: .note } In some cases, limited metadata about the biological sample that was used to generate the sequence may also be included.
+  - {: .note } 
+  In some cases, limited metadata about the biological sample that was used to generate the sequence may also be included.
 - Sequence Read Archive (SRA) - A database of raw sequencing reads and metadata about sequencing methods.
 - BioSample - Data about the biological specimen which was the starting point for sequencing.
 - BioProject - An organizational structure that links data for a single research or surveillance project stored in other NCBI databases.
-  - {: .note } Umbrella BioProjects are a special BioProject type that only contain other BioProjects.
+  - {: .note } 
+    Umbrella BioProjects are a special BioProject type that only contain other BioProjects.
 
-These resources can be linked into a hierarchy as the figure below from [Timme et al. (2023)](https://doi.org/10.1099/mgen.0.001145) shows graphically:
+These resources are linked into a hierarchy:
+
+- **Umbrella BioProjects** contain multiple **BioProjects** that are related in some way.
+- **BioProjects** contain **BioSamples** (and other NCBI database entries) that were created as a part of a specific research/surveillance effort.
+- **BioSamples** contain data about a biological sample and are linked to **SRA** and/or **GenBank**/**RefSeq** entries.
+- **SRA** entries contain raw sequence data and sequencing procedure metadata.
+- **GenBank**/**RefSeq** entries contain assembled sequences and assembly procedure metadata.
+
+{: .note } 
+RefSeq is a collection of high quality non-redundant sequences curated by NCBI. Users are not permitted to submit directly to RefSeq. For additional information see the [NCBI RefSeq About Page](https://www.ncbi.nlm.nih.gov/refseq/about/)
+
+The figure below from [Timme et al. (2023)](https://doi.org/10.1099/mgen.0.001145) shows the relationship between these resources graphically (excluding umbrella BioProjects):
 
 > ![Fig. 1.](../../media/Pathogen_DOM.png)
 > [Putting everything in its place: using the INSDC compliant Pathogen Data Object Model to better structure genomic data submitted for public health applications]( https://pubmed.ncbi.nlm.nih.gov/38085797/)
@@ -37,9 +50,17 @@ Timme RE, Karsch-Mizrachi I, Waheed Z, et al. Putting everything in its place: u
 
 ## Should you submit your data to NCBI?
 
-Submitting your genomic data to NCBI plays a crucial role in advancing scientific research and public health initiatives. By making this valuable data accessible to researchers and health officials worldwide, you contribute to collaborative efforts that can lead to significant breakthroughs in understanding genetic factors related to diseases and health outcomes. This open-access model not only fosters collaboration and innovation but also helps create a comprehensive resource for biomedical research, enabling scientists to explore genetic variations and their implications for clinical diagnostics, drug discovery, vaccine development, and public health surveillance. Additionally, submitting your data may be a requirement for funding agencies, necessary for manuscript or other publication submissions, or mandated by your organization's policies. Submission can also directly benefit and inform the submitter; certain BioProjects automatically assemble, characterize, and identify clusters of genomes via [NCBI's Pathogen Detection system](https://www.ncbi.nlm.nih.gov/pathogens/), allowing the submitter to identify putatively linked samples sequenced by other institutions. Furthermore, data stored in NCBI can enhance the visibility of your research or data contributions, allowing it to be easily cited and referenced, which promotes responsible use and interpretation of genomic information in the context of public health.
+Submitting your genomic data to NCBI plays a crucial role in advancing scientific research and public health initiatives. By making this valuable data accessible to researchers and health officials worldwide, you contribute to collaborative efforts that can lead to significant breakthroughs in understanding genetic factors related to diseases and health outcomes. This open-access model not only fosters collaboration and innovation but also helps create a comprehensive resource for biomedical research, enabling scientists to explore genetic variations and their implications for clinical diagnostics, drug discovery, vaccine development, and public health surveillance. Critically, having a body of data from many jurisdictions to compare against enables genomic epidemiologists to find contextual samples necessary for proper investigation of outbreaks and transmission relationships.
 
-Despite the many reasons to submit data to NCBI, researchers and public health officials may have valid concerns or hesitations about sharing their genomic data, particularly regarding privacy and confidentiality issues with potential Personally Identifiable Information (PII) or Protected Health Information (PHI) that could be revealed through pathogen-specific data and corresponding metadata. One alternative to consider is submitting genomic data that has been scrubbed of human reads, along with limited metadata, to minimize the risk of disclosing identifiable information that could raise legal or ethical concerns. Additionally, institutional policies or funding agency requirements may impose restrictions or delays on data sharing, and intellectual property concerns could impact proprietary research. Therefore, researchers and public health officials must carefully assess the ethical, legal, and logistical factors involved in submitting genomic data, ensuring compliance with regulations while safeguarding personal and clinical information and contributing effectively to public health initiatives.
+Submission can also directly benefit and inform the submitter; certain BioProjects automatically assemble, characterize, and identify clusters of genomes via [NCBI's Pathogen Detection system](https://www.ncbi.nlm.nih.gov/pathogens/), allowing the submitter to identify putatively linked samples sequenced by other institutions. 
+
+
+Furthermore, data stored in NCBI can enhance the visibility of your research or data contributions, allowing it to be easily cited and referenced, which promotes responsible use and interpretation of genomic information in the context of public health.
+
+{: .note}
+Submitting your data may be a requirement for funding agencies, necessary for manuscript or other publication submissions, or mandated by your organization's policies. 
+
+Despite the many reasons to submit data to NCBI, researchers and public health officials may have valid concerns or hesitations about sharing their pathogen sequence data, particularly regarding privacy and confidentiality issues with potential Personally Identifiable Information (PII) or Protected Health Information (PHI) that could be revealed through pathogen-specific data and corresponding metadata. One alternative to consider is submitting genomic data that has been scrubbed of human reads (when sequencing directly from human specimens where there is a risk of generating non-target data), along with limited metadata, to minimize the risk of disclosing identifiable information that could raise legal or ethical concerns. Additionally, institutional policies or funding agency requirements may impose restrictions or delays on data sharing, and intellectual property concerns could impact proprietary research. Therefore, researchers and public health officials must carefully assess the ethical, legal, and logistical factors involved in submitting genomic data, ensuring compliance with regulations while safeguarding personal and clinical information and contributing effectively to public health initiatives.
 
 ## INSDC Federation: What if NCBI disappears?
 
@@ -59,11 +80,11 @@ The steps detailed above can only be done once per NCBI account (i.e. each NCBI 
 
 ## Submission options: Web Portal vs FTP API
 
-NCBI offers two primary pathways for submitting genomic data, each suited to different laboratory workflows and submission volumes. The NCBI [Submission Portal](https://submit.ncbi.nlm.nih.gov/) provides a user-friendly web interface that guides users through the submission process step-by-step with forms, wizards, and interactive validation. This approach is ideal for laboratories that are new to NCBI submission, submit data infrequently, or work with smaller batches of samples. The web portal allows users to upload files directly through their browser and provides immediate feedback on {metadata formatting and submission status.
+NCBI offers two primary pathways for submitting genomic data, each suited to different laboratory workflows and submission volumes. The NCBI [Submission Portal](https://submit.ncbi.nlm.nih.gov/) provides a user-friendly web interface that guides users through the submission process step-by-step with forms, wizards, and interactive validation. This approach is ideal for laboratories that are new to NCBI submission, submit data infrequently, or work with smaller batches of samples. The web portal allows users to upload files directly through their browser and provides immediate feedback on metadata formatting and submission status.
 
-For laboratories with high-throughput sequencing operations, frequent submission schedules, or established bioinformatics pipelines, NCBI also supports programmatic submission via File Transfer Protocol (FTP) Secure FTP (SFTP). These methods enable automated workflows where metadata and sequence files can be prepared in standardized formats and submitted without human intervention, making it particularly attractive for high volume sequencing labs. Generally, the same set of submission files are required for FTP as with the web portal but need to be packaged in a specific way before uploading.
+For laboratories with high-throughput sequencing operations, frequent submission schedules, or established bioinformatics pipelines, NCBI also supports programmatic submission via File Transfer Protocol (FTP) and Secure FTP (SFTP). These methods enable automated workflows where metadata and sequence files can be prepared in standardized formats and submitted without human intervention, making it particularly attractive for high volume sequencing labs. Generally, the same set of submission files are required for FTP/SFTP and the web portal but the files need to be packaged in a specific way before uploading.
 
-Utilizing an SFTP-based pathway requires a one-time setup of a "Center Account" which functions like a Submission Group in the web portal but also provides credentials for accessing NCBI's FTP servers. Setting up a Center Account for the first time requires contacting NCBI by emailing [sra@ncbi.nlm.nih.gov](mailto:sra@ncbi.nlm.nih.gov).
+Utilizing an FTP/SFTP-based pathway requires a one-time setup of a "Center Account" which functions like a Submission Group in the web portal but also provides credentials for accessing NCBI's FTP/SFTP servers. Setting up a Center Account for the first time requires contacting NCBI by emailing [sra@ncbi.nlm.nih.gov](mailto:sra@ncbi.nlm.nih.gov).
 
 The choice between methods often depends on your laboratory's submission frequency and technical capacity. It is advised to start with the web portal to become familiar with NCBI's requirements and workflows, then to consider transitioning to FTP-based methods as your submission volume and automation needs grow. 
 

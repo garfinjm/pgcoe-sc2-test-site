@@ -1045,7 +1045,7 @@
       "x": 488.52701233789685,
       "y": 654.3013759978575,
       "width": 165.59599535117565,
-      "height": 143.7439186733593,
+      "height": 152,
       "angle": 0,
       "strokeColor": "#1e1e1e",
       "backgroundColor": "transparent",
@@ -1061,26 +1061,30 @@
         "type": 2
       },
       "seed": 78146845,
-      "version": 1066,
-      "versionNonce": 1107898280,
+      "version": 1068,
+      "versionNonce": 937619856,
       "isDeleted": false,
       "boundElements": [
         {
           "type": "text",
           "id": "5mLhIQZ82XHnzY2pmOxD_"
+        },
+        {
+          "id": "d9totwlPc6UqXI4LfCUsB",
+          "type": "arrow"
         }
       ],
-      "updated": 1765302988606,
+      "updated": 1770399622264,
       "link": null,
       "locked": false
     },
     {
       "id": "5mLhIQZ82XHnzY2pmOxD_",
       "type": "text",
-      "x": 537.1500559754954,
-      "y": 706.6359122107392,
-      "width": 68.55191040039062,
-      "height": 39.20288691091618,
+      "x": 537.6412211366282,
+      "y": 697.632303572094,
+      "width": 67.569580078125,
+      "height": 65.33814485152696,
       "angle": 0,
       "strokeColor": "#1e1e1e",
       "backgroundColor": "transparent",
@@ -1094,20 +1098,20 @@
       "index": "bPk",
       "roundness": null,
       "seed": 1117938995,
-      "version": 1359,
-      "versionNonce": 1735353768,
+      "version": 1418,
+      "versionNonce": 1127542160,
       "isDeleted": false,
       "boundElements": [],
-      "updated": 1765302988606,
+      "updated": 1770399616509,
       "link": null,
       "locked": false,
-      "text": "Is your sample\nhost-\nassociated?",
+      "text": "Was your\nsample\ncollected from\na host of that\npathogen?",
       "fontSize": 10.454103176244313,
       "fontFamily": 6,
       "textAlign": "center",
       "verticalAlign": "middle",
       "containerId": "MrphGrqW4VegaddG7UHGO",
-      "originalText": "Is your sample host-associated?",
+      "originalText": "Was your sample collected from a host of that pathogen?",
       "autoResize": true,
       "lineHeight": 1.25
     },
@@ -1402,10 +1406,10 @@
     {
       "id": "d9totwlPc6UqXI4LfCUsB",
       "type": "arrow",
-      "x": 571.6925455467435,
-      "y": 795.2326001179695,
-      "width": 0.7350710665179501,
-      "height": 73.83963051724301,
+      "x": 571.5828331466533,
+      "y": 804.2636321632018,
+      "width": 1.2335412656719882,
+      "height": 111.5865367459952,
       "angle": 0,
       "strokeColor": "#1e1e1e",
       "backgroundColor": "transparent",
@@ -1419,8 +1423,8 @@
       "index": "bPv",
       "roundness": null,
       "seed": 1817156349,
-      "version": 742,
-      "versionNonce": 153990312,
+      "version": 792,
+      "versionNonce": 595184016,
       "isDeleted": false,
       "boundElements": [
         {
@@ -1428,7 +1432,7 @@
           "id": "SCfSr4tnRvt5T6nT8mH84"
         }
       ],
-      "updated": 1765302988606,
+      "updated": 1770399627620,
       "link": null,
       "locked": false,
       "points": [
@@ -1437,12 +1441,20 @@
           0
         ],
         [
-          -0.7350710665179501,
-          73.83963051724301
+          1.2335412656719882,
+          111.5865367459952
         ]
       ],
-      "startBinding": null,
-      "endBinding": null,
+      "startBinding": {
+        "elementId": "MrphGrqW4VegaddG7UHGO",
+        "focus": 0.01229658998519767,
+        "gap": 2.7749058724601534
+      },
+      "endBinding": {
+        "elementId": "GxpTWLxsZb1jM5eVNIT09",
+        "focus": -0.002278179020368726,
+        "gap": 7.786812201848534
+      },
       "startArrowhead": null,
       "endArrowhead": "triangle",
       "elbowed": false,
@@ -1490,8 +1502,8 @@
     {
       "id": "GxpTWLxsZb1jM5eVNIT09",
       "type": "rectangle",
-      "x": 482.62669894474817,
-      "y": 876.859042837061,
+      "x": 484.62669894474817,
+      "y": 918.859042837061,
       "width": 177.396622137473,
       "height": 65.27059102262318,
       "angle": 0,
@@ -1509,24 +1521,28 @@
         "type": 3
       },
       "seed": 1962750813,
-      "version": 613,
-      "versionNonce": 955689640,
+      "version": 651,
+      "versionNonce": 1603005840,
       "isDeleted": false,
       "boundElements": [
         {
           "id": "RWJVECcaxjtw5YRwPXmLg",
           "type": "text"
+        },
+        {
+          "id": "d9totwlPc6UqXI4LfCUsB",
+          "type": "arrow"
         }
       ],
-      "updated": 1765302988606,
+      "updated": 1770399627619,
       "link": null,
       "locked": false
     },
     {
       "id": "RWJVECcaxjtw5YRwPXmLg",
       "type": "text",
-      "x": 489.8854500769612,
-      "y": 892.3589595468524,
+      "x": 491.8854500769612,
+      "y": 934.3589595468524,
       "width": 162.87911987304688,
       "height": 34.27075760304043,
       "angle": 0,
@@ -1542,11 +1558,11 @@
       "index": "bPy",
       "roundness": null,
       "seed": 1945027283,
-      "version": 833,
-      "versionNonce": 2004492456,
+      "version": 870,
+      "versionNonce": 1624750992,
       "isDeleted": false,
       "boundElements": [],
-      "updated": 1765302988606,
+      "updated": 1770399627619,
       "link": null,
       "locked": false,
       "text": "Use \"Pathogen:\nenvironmental/food/other\"",
