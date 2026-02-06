@@ -1,10 +1,11 @@
 ---
-title: "Assembly Uploads"
+title: "Viral Assembly Submission"
 layout: page
-nav_order: 6
+parent: "Assembly Uploads"
+nav_order: 2
 ---
 
-# Assembly Uploads
+# Viral Assembly Submission
 {: .no_toc }
 
 - **Table of Contents**

@@ -1,10 +1,11 @@
 ---
-title: "Assembly Uploads"
+title: "Bacterial Assembly Submission"
 layout: page
-nav_order: 6
+parent: "Assembly Uploads"
+nav_order: 1
 ---
 
-# Assembly Uploads
+# Bacterial Assembly Submission
 {: .no_toc }
 
 - **Table of Contents**

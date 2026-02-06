@@ -35,4 +35,5 @@ Human read scrubbing is the process of screening and removing human reads from r
 
 {: .tip }
 > For more information on human read removal, this paper is a good place to start.
+> 
 > > [Forbes, Matthew et al. “Benchmarking of human read removal strategies for viral and microbial metagenomics.” Cell reports methods vol. 5,11 (2025): 101218. doi:10.1016/j.crmeth.2025.101218](https://pmc.ncbi.nlm.nih.gov/articles/PMC12664888/)
