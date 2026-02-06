@@ -14,29 +14,7 @@ nav_order: 6
 Sections start here
 -->
 
-## How Can I Annotate my Genome?
-
-Genome annotation is the process of tagging genes, structural elements, and other features within a genome. This is a complex process, with many approaches that vary based on organism type and the desired level of detail.
-
-NCBI has different annotation requirements based on the type of organism being submitted. See the table below to determine whether an annotation is required for your organism:
-
-| **Organism** | **Submitter Provides Annotation** | **Files Required** | **Note** |
-| --- | --- | --- | --- |
-| Bacteria | Optional | Genome FASTA  OR  Genome FASTA + .sqn file | Genomes submitted without an annotation will be annotated with [PGAP](https://www.ncbi.nlm.nih.gov/refseq/annotation_prok/) by NCBI. |
-| Eukaryotes | Optional | Genome FASTA  OR  Genome FASTA + .sqn file | Genomes submitted without an annotation will be stored in NCBI unannotated. |
-| SARS-CoV-2 | No | Genome FASTA | SARS-CoV-2 genomes will be annotated with [VADR](https://github.com/ncbi/vadr) by NCBI. |
-| Influenza | No | Genome FASTA | Influenza genomes will be annotated with [FLAN](https://pmc.ncbi.nlm.nih.gov/articles/PMC1933127/) by NCBI. However, NCBI intends to update to VADR in the future and will accept any genomes that fail FLAN but pass VADR if you ask them. |
-| Other viruses | Yes | Zipped .sqn file |  |
-
-### Annotating and submitting bacterial genomes
-
-Annotation of bacterial genomes before submission to NCBI is optional, and in most cases unnecessary. Bacterial genomes submitted to NCBI without an annotation will be annotated by NCBI's [PGAP](https://www.ncbi.nlm.nih.gov/refseq/annotation_prok/) tool shortly after submission and made available on NCBI in addition to the submitted genome.
-
-In cases where NCBI's automatic annotation is not desired, [Bakta](https://github.com/oschwengers/bakta) is a great tool for bacterial annotation. If run with the `--compliant` argument, the GFF3 files produced by Bakta can be fed directly into NCBI's [table2asn](https://www.ncbi.nlm.nih.gov/genbank/table2asn/) software to create .sqn files needed to submit genome annotations to NCBI. The Bakta documentation has [a quick overview](https://github.com/oschwengers/bakta?tab=readme-ov-file#genome-submission) of the procedure to generate the compatible GFF3 files here. NCBI provides a guide to running table2asn with GFF3 files [here](https://www.ncbi.nlm.nih.gov/genbank/genomes_gff/).
-
-There are many other tools for genome annotation and methods of submitting bacterial genomes to NCBI available, but the options above are suitable for most public health use cases.
-
-### Annotating and submitting viral genomes
+## Annotating and submitting viral genomes
 
 Often, the hardest part of uploading viral assemblies to NCBI is the requirement to include gene annotations with genomes. You should seek out an automated gene annotation tool appropriate for your organism. A gene annotation tool would generally take as input 1) your bare unannotated genome FASTA and 2) some external reference data and produce a `.tbl` file that contains the gene names and locations in a coordinate space relative to your provided genome. The .tbl file would then be input to [table2asn](https://www.ncbi.nlm.nih.gov/genbank/table2asn/), a tool which formats sequence data an annotations which is required for submission to GenBank. Instructions for running table2asn to generate a .sqn file are [available on NCBI's website](https://www.ncbi.nlm.nih.gov/genbank/eukaryotic_genome_submission/). Running table2asn in batch mode may also require a Source table format (.src) file containing per-sequence metadata. For additional details see [the table2asn documentation](https://www.ncbi.nlm.nih.gov/genbank/table2asn/#:~:text=Source%20table%20format).
 
@@ -44,24 +22,8 @@ If a closely-related (no major inversions or transpositions) reference genome is
 
 [VADR](https://github.com/ncbi/vadr) is a command line tool maintained by NCBI that can annotate bare viral genomes for species that have a previously built model. Although VADR was originally designed to support only a handful of viral taxa, the list of viral species with pre-built models is [increasing regularly](https://github.com/broadinstitute/viral-references/blob/main/annotation/vadr/vadr-by-taxid.tsv). [The VADR documentation for building models](https://github.com/ncbi/vadr/blob/master/documentation/build.md) for new taxa can be used with some effort.
 
-## Genome Naming and Species Differentiations
 
-There are multiple international bodies that exist to aid in the naming of species and to help create structure around species naming conventions and submission to international repositories. These international bodies are distinct for the different taxonomic classes of organisms. There are three main taxonomic separations included in NCBI: 
-- Prokaryotes fall under the [International Code of Nomenclature of Prokaryotes](https://the-icsp.org/code-of-nomenclatur) (curated by [ICSP](http://www.the-icsp.org/))
-- Animals fall under the [International Code of Zoological Nomenclature](https://www.iczn.org/the-code/the-code-online/) (curated by [ICZN](https://www.iczn.org/))
-- Plants, algae, and fungi fall under the [International Code of Nomenclature For Algae, Fungi, and Plants](https://www.iaptglobal.org/_functions/code/madrid) (curated by [IAPT](https://www.iaptglobal.org/)). 
-- Viruses, do not have a code of nomenclature, but instead fall under the recommendations from the [International Committee on Taxonomy of Viruses](https://ictv.global/).
-
-When submitting samples to NCBI, there are multiple guidelines on what information should be included in a submission based on specific recommendations for that particular species. Well characterized and popularly submitted viruses, such as influenza and SARS-CoV-2, have well established schemas that are recommended by multiple bodies. 
-
-{: .example }
-> In the case of SARS-CoV-2 ICTV released the following naming convention for individual isolates: SARS-CoV-2/host/location/isolate/date. Further recommendations by the CDC proposed simplifying naming conventions to include country/state-lab-sample/year information when submitting to public repositories like GISAID and NCBI. In certain instances, these simplifications are aimed at reducing personally identifiable information (PII), subsequently reducing the likelihood that a sample will not be uploaded to avoid being identified by it's name. 
-
-It is generally suggested that submitters look to [ICTV](https://ictv.global/) to see if there is a naming schema available for their virus of interest. If none is available, consider looking to other closely related viruses for guidance.
-
-## Submission Mechanics
-
-### Submission Mechanics: Bacteria
+## Submission Mechanics: Bacteria
 
 The primary method of submitting bacterial genomes to NCBI is through the [NCBI Submission Portal "Genome" page](https://submit.ncbi.nlm.nih.gov/subs/genome/). This user-friendly web interface allows submission of single genomes or batches of up to 400 genomes. Sample metadata is provided either by filling in a series of forms (for single sample submissions) or by filling out and uploading structured spreadsheet/CSV files with sample metadata.
 
@@ -79,19 +41,19 @@ Genome and annotation data files can be uploaded through several mechanisms:
 {: .note }
 > Options 2 and 3 above require configuring your FTP/Aspera client with [credentials provided on the NCBI Genome website](https://submit.ncbi.nlm.nih.gov/subs/genome/) . These credentials only appear when logged into NCBI.
 
-### Submission Mechanics: Most Viruses
+## Submission Mechanics: Most Viruses
 
 To submit a genome for a virus that is not part of the "special virus" group [(see below)](#submission-mechanics-special-viruses-sars-cov-2-influenza-abc-norovirus-dengue-virus), email [mgb-sub@ncbi.nlm.nih.gov](mailto:mgb-sub@ncbi.nlm.nih.gov) and attach a zipped .sqn file (the output of [table2asn](https://www.ncbi.nlm.nih.gov/genbank/table2asn/)). Typically, NCBI staff will reply within a business day for any clarifications or curation issues after a submission email is sent. Currently there is no FTP/XML submission option available and the normal NCBI submission web portal cannot be used. A separate, web portal called [BankIt](https://www.ncbi.nlm.nih.gov/WebSub/) can be used as an alternative to email. However, email is generally the easier process. Viral genome submissions cannot be linked to NCBI submission groups currently, they are only associated with the submitter's personal NCBI account.
 
-### Submission mechanics: special viruses (SARS-CoV-2, Influenza A/B/C, Norovirus, Dengue Virus)
+## Submission mechanics: special viruses (SARS-CoV-2, Influenza A/B/C, Norovirus, Dengue Virus)
 
 SARS-CoV-2, Influenza A/B/C, Norovirus and Dengue Virus (referred to hereafter as special viruses) cannot be submitted via [the path described for other viruses above](#submission-mechanics-most-viruses). Instead, these special viruses are submitted via the [web-based GenBank section](https://submit.ncbi.nlm.nih.gov/subs/genbank/) of NCBI's Submission Portal or via FTP.
 
-#### Submission via NCBI's GenBank Submission Portal
+### Submission via NCBI's GenBank Submission Portal
 
 NCBI's GenBank Submission Portal is a straightforward web-based interface for submitting assembled special virus sequences to NCBI. Submission requires a FASTA of your sequence and a TSV file containing metadata about the sequence. At minimum, submissions must include the collection date, genotype, geographic location where the sample was collected, host, isolation source, assembly method, and a name for the isolate. These metadata can be provided either using a TSV file (a template is provided during the submission process) or by filling in an interactive form on the website. While it is best to provide as much metadata as possible about your sequence, it is acceptable to use `unknown` for many of these fields. In some cases, it may be necessary to submit with less specific metadata due to privacy concerns, for more information see [this page](../biosample/index.html#reducing-identifiability-of-sequence-data).
 
-#### Submission of special viruses via FTP
+### Submission of special viruses via FTP
 
 Large batches of Influenza A/B/C and SARS-CoV-2 can also be submitted via FTP [(see the bacterial submission mechanics section for more info on setting up FTP submissions)](#submission-mechanics-bacteria), but Norovirus and Dengue must go through the [GenBank Submission Portal](https://submit.ncbi.nlm.nih.gov/subs/genbank/). FTP submissions must include a FASTA containing sequence data, an .src file containing sequence metadata, and a .sbt file containing the author list (See [NCBI's documentation on table2asn](https://www.ncbi.nlm.nih.gov/genbank/table2asn/) for more info on these files). Optionally, structured comment file (.cmt) may be included containing information about sequencing coverage per segment/sample.
 
@@ -103,11 +65,11 @@ Special virus submissions must be separated by species/subtype.
 {: .note }
 > Influenza D is not a special virus and must be submitted [via table2asn/BankIt like most other viruses](#submission-mechanics-most-viruses).
 
-### Virus-Specific Considerations
+## Virus-Specific Considerations
 
 In addition to the various submission pathways, some viruses have specific metadata requirements or conventions. Below are considerations for Influenza, SARS-CoV-2, and Dengue, special considerations for other less common viruses may exist which are not documented here.
 
-#### Influenza-Specific Considerations
+### Influenza-Specific Considerations
 
 Influenza A requires a source modifier column called `serotype` and it must be set to the flu A subtype (e.g. H1N1, H3N2, etc). Flu B and C do not require this column.
 
@@ -124,7 +86,7 @@ Currently, influenza sequences are annotated and error checked at NCBI using a t
 {: .tip }
 > Some genomes pre-screened with VADR may fail FLAN validation upon submission. If this happens, the submitter can reply to the automated email from NCBI for that submission and request that the failing sequences be permitted based on the passing VADR results. NCBI will then upload them manually. This process will need to be followed for every submission.
 
-#### SARS-CoV-2 Specific Considerations
+### SARS-CoV-2 Specific Considerations
 
 SARS-CoV-2 sequences are annotated and error checked at NCBI via [VADR](https://github.com/ncbi/vadr) after submission. If submissions have been pre-screened with VADR prior to submission and only passing (no alerts) sequences uploaded, all sequences should pass NCBI upload.
 
@@ -133,7 +95,7 @@ SARS-CoV-2 sequences are annotated and error checked at NCBI via [VADR](https://
 
 The community has a specific naming convention for SARS-CoV-2 genomes including the host (e.g. human), country, state, year, etc. (ex. SARS-CoV-2/human/USA/CA-CDPH-001/2020). For additional details and other SARS-CoV-2-specific metadata standards see the [PHA4GE SARS-CoV-2 Contextual Data Specification](https://github.com/pha4ge/sars-cov-2-contextual-data-specification).
 
-#### Dengue Specific Considerations
+### Dengue Specific Considerations
 
 Dengue source modifier tables must contain a column called `genotype` and it must be set to one of the following: 1/2/3/4/5.
 

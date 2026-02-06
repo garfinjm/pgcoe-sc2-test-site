@@ -23,12 +23,12 @@ NCBI contains a wealth of biomedical and genomic information. Submitting sequenc
 
 - GenBank/RefSeq - These resources primarily store assembled sequence data and metadata about how a sequence was assembled.
   - {: .note } 
-  In some cases, limited metadata about the biological sample that was used to generate the sequence may also be included.
+  > In some cases, limited metadata about the biological sample that was used to generate the sequence may also be included.
 - Sequence Read Archive (SRA) - A database of raw sequencing reads and metadata about sequencing methods.
 - BioSample - Data about the biological specimen which was the starting point for sequencing.
 - BioProject - An organizational structure that links data for a single research or surveillance project stored in other NCBI databases.
   - {: .note } 
-    Umbrella BioProjects are a special BioProject type that only contain other BioProjects.
+    > Umbrella BioProjects are a special BioProject type that only contain other BioProjects.
 
 These resources are linked into a hierarchy:
 
@@ -52,7 +52,7 @@ Timme RE, Karsch-Mizrachi I, Waheed Z, et al. Putting everything in its place: u
 
 Submitting your genomic data to NCBI plays a crucial role in advancing scientific research and public health initiatives. By making this valuable data accessible to researchers and health officials worldwide, you contribute to collaborative efforts that can lead to significant breakthroughs in understanding genetic factors related to diseases and health outcomes. This open-access model not only fosters collaboration and innovation but also helps create a comprehensive resource for biomedical research, enabling scientists to explore genetic variations and their implications for clinical diagnostics, drug discovery, vaccine development, and public health surveillance. Critically, having a body of data from many jurisdictions to compare against enables genomic epidemiologists to find contextual samples necessary for proper investigation of outbreaks and transmission relationships.
 
-Submission can also directly benefit and inform the submitter; certain BioProjects automatically assemble, characterize, and identify clusters of genomes via [NCBI's Pathogen Detection system](https://www.ncbi.nlm.nih.gov/pathogens/), allowing the submitter to identify putatively linked samples sequenced by other institutions. 
+Public data submission can also directly benefit and inform the submitter; certain BioProjects automatically assemble, characterize, and identify clusters of genomes via [NCBI's Pathogen Detection system](https://www.ncbi.nlm.nih.gov/pathogens/), allowing the submitter to identify putatively linked samples sequenced by other institutions. 
 
 
 Furthermore, data stored in NCBI can enhance the visibility of your research or data contributions, allowing it to be easily cited and referenced, which promotes responsible use and interpretation of genomic information in the context of public health.

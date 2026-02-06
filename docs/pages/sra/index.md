@@ -25,9 +25,9 @@ Submitting sequencing data to NCBI databases in batches can greatly improve the 
 Additionally, all data submitted within a batch submission must be submitted to only one BioProject. 
 
 {: .important }
-> All samples in a batch BioSample submission must use the same BioSample package. If your samples use more than one BioSample package they should be split into two submissions.
-> > {: .example } 
-> > Eukaryotic genome submissions must be separate from bacterial submissions. Influenza A submissions must be separate from Influenza B, which must also be separate from general non-special viral submissions.
+All samples in a batch BioSample submission must use the same BioSample package. If your samples use more than one BioSample package they should be split into two submissions.
+> {: .example } 
+> Eukaryotic genome submissions must be separate from bacterial submissions. Influenza A submissions must be separate from Influenza B, which must also be separate from general non-special viral submissions.
 
 ## Human Read Scrubbing
 
@@ -35,4 +35,4 @@ Human read scrubbing is the process of screening and removing human reads from r
 
 {: .tip }
 > For more information on human read removal, this paper is a good place to start.
-> [Forbes, Matthew et al. “Benchmarking of human read removal strategies for viral and microbial metagenomics.” Cell reports methods vol. 5,11 (2025): 101218. doi:10.1016/j.crmeth.2025.101218](https://pmc.ncbi.nlm.nih.gov/articles/PMC12664888/)
+> > [Forbes, Matthew et al. “Benchmarking of human read removal strategies for viral and microbial metagenomics.” Cell reports methods vol. 5,11 (2025): 101218. doi:10.1016/j.crmeth.2025.101218](https://pmc.ncbi.nlm.nih.gov/articles/PMC12664888/)
