@@ -87,7 +87,7 @@ NCBI offers two primary pathways for submitting genomic data, each suited to dif
 
 For laboratories with high-throughput sequencing operations, frequent submission schedules, or established bioinformatics pipelines, NCBI also supports programmatic submission via File Transfer Protocol (FTP) and Secure FTP (SFTP). These methods enable automated workflows where metadata and sequence files can be prepared in standardized formats and submitted without human intervention, making it particularly attractive for high volume sequencing labs. Generally, the same set of submission files are required for FTP/SFTP and the web portal but the files need to be packaged in a specific way before uploading.
 
-Utilizing an FTP/SFTP-based pathway requires a one-time setup of a "Center Account" which functions like a Submission Group in the web portal but also provides credentials for accessing NCBI's FTP/SFTP servers. Setting up a Center Account for the first time requires contacting NCBI by emailing [sra@ncbi.nlm.nih.gov](mailto:sra@ncbi.nlm.nih.gov).
+Utilizing an FTP/SFTP-based pathway requires a one-time setup of a "Center Account" which functions like a Submission Group in the web portal but also provides credentials for accessing NCBI's FTP/SFTP servers. NCBI's instructions for setting up a center account can be found [here.](https://submit.ncbi.nlm.nih.gov/about/sra/#faq6)
 
 The choice between methods often depends on your laboratory's submission frequency and technical capacity. It is advised to start with the web portal to become familiar with NCBI's requirements and workflows, then to consider transitioning to FTP-based methods as your submission volume and automation needs grow. 
 
