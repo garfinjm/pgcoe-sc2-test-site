@@ -17,8 +17,8 @@ Sections start here
 ## How do I submit my genome assembly to NCBI?
 
 This process varies depending on the organism being submitted. 
-- [Submitting bacterial assemblies](/docs/pages/assembly/bacterial_assemblies.md)
-- [Submitting viral assemblies](/docs/pages/assembly/viral_assemblies.md)
+- [Submitting bacterial assemblies](/docs/pages/assembly/bacterial_assemblies.html)
+- [Submitting viral assemblies](/docs/pages/assembly/viral_assemblies.html)
 
 ## How Can I Annotate my Genome?
 

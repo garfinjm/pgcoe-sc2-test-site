@@ -25,7 +25,7 @@ Below is a flowchart to aid in the selection of the appropriate BioSample packag
 > ![BioSample package selection flowchart](../../media/Biosample_Package_Flowchart.svg)
 
 {: .note }
-> NCBI has additional BioSample packages that are unique to specific projects (MIGS, MIMAG, MIMARKS, MIMS, MISAG, MIUVIG). If your funding and data are not associated with any of these projects, it is OK to ignore these. More information can be found [here.]](https://www.gensc.org/pages/standards-intro.html)
+> NCBI has additional BioSample packages that are unique to specific projects (MIGS, MIMAG, MIMARKS, MIMS, MISAG, MIUVIG). If your funding and data are not associated with any of these projects, it is OK to ignore these. More information can be found [here.](https://www.gensc.org/pages/standards-intro.html)
 
 ## Frequent Metadata Issues
 
